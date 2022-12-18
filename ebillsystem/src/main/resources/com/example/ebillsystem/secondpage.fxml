@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ebillsystem.secondpageController">
+   <top>
+      <AnchorPane prefHeight="73.0" prefWidth="600.0" style="-fx-background-color: #49044e;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="98.0" layoutY="3.0" prefHeight="69.0" prefWidth="417.0" text="ELECTRICITY BILLING - USER DETAILS" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Light" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="265.0" prefWidth="534.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="94.0" layoutY="62.0" prefHeight="17.0" prefWidth="81.0" text="NAME" />
+            <Label layoutX="94.0" layoutY="106.0" text="METER NUMBER" />
+            <Label layoutX="94.0" layoutY="146.0" text="UNITS" />
+            <Label layoutX="94.0" layoutY="189.0" text="MONTH" />
+            <TextField fx:id="namefield" layoutX="258.0" layoutY="58.0" promptText="name" />
+            <TextField fx:id="meterfield" layoutX="258.0" layoutY="102.0" promptText="meter no" />
+            <TextField fx:id="unitfield" layoutX="258.0" layoutY="142.0" promptText="units consumed" />
+            <Button fx:id="prevbutton" layoutX="34.0" layoutY="273.0" mnemonicParsing="false" onAction="#prevbuttonOnAction" text="&lt;&lt;PREV" />
+            <Button fx:id="nextbutton" layoutX="512.0" layoutY="273.0" mnemonicParsing="false" onAction="#nextbuttonOnAction" text="NEXT&gt;&gt;" />
+            <TextField fx:id="monthfield" layoutX="258.0" layoutY="185.0" promptText="month" />
+            <Button fx:id="powertariff" layoutX="252.0" layoutY="273.0" mnemonicParsing="false" onAction="#powertariffOnAction" text="POWER TARIFF" />
+            <Label fx:id="nextmessagelabel" alignment="CENTER" layoutX="185.0" layoutY="22.0" prefHeight="17.0" prefWidth="274.0" textFill="#e62d2d" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
